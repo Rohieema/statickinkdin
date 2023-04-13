@@ -143,475 +143,217 @@ nav .wrapper .right .me i:first-child{
 }
 
 /* ====================== Sidebar =================== */
+.user-data-img {
+    background-color: gray;
+    position: relative;
+    left: 70px;
+    bottom: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
 
-.container{
+#lidn_page {
     display: grid;
-    grid-template-columns: 20% 52% 28%;
-    gap: 1.4rem;
-    width: 85%;
-    margin: 1.8rem auto;
+    grid-template-columns: 250px 480px 250px;
+    justify-content: center;
+
 }
 
-aside .sidebar{
-    background: #fff;
-    width: 100%;
-    height: 50vh;
-    position: relative;
-    border-radius: 0.8rem;
+#user_data {
+    border: 1px solid rgb(248, 245, 245);
+    height: 200px;
+    margin: 10px 5px 5px 0px;
+    background-color: #fff;
+}
+/* user img background color*/
+.us-da-bcol {
     overflow: hidden;
+    background-color: red;
+    height: 100px;
 }
 
-.sidebar .top {
-    width: 100%;
-    height: 8vh;
-    background-color: rgb(82, 92, 105);
-    position: absolute;
-    
-}
-
-.sidebar img{
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    top: 3%;
-    border-radius: 50%;
-    width: 4.5rem;
-    height: 4.5rem;
-    border: 2px solid #fff;
-    
-}
-
-aside .sidebar .profile{
-    position: relative;
+.user-name {
     text-align: center;
-    top: 5%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-}
-
-.sidebar .profile a{
-    text-decoration: none;
-    color: #000;
-}
-
-.sidebar .profile a:hover{
-    text-decoration: underline;
-}
-
-.sidebar .profile small{
-    font-size: 0.7rem;
-    color: gray;
-}
-
-.sidebar .view{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    top: 6%;
+    bottom: 50px;
+}
+.connection {
+    padding: 10px;
+    border: 1px solid rgb(253, 250, 250);
+    margin: 5px 5px 0px 0px;
+    background-color: #fff;
+}
+.connection img{
+    height: 20px;
+    width: 20px;
+    margin:10px 120px 0px 0px;
+}
+/* recent division style*/
+#recent {
+    border: 1px solid rgb(253, 250, 250);
+    background-color: #fff;
+    margin: 5px;
+    padding: 10px;
 }
 
-.sidebar .view .views{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.2rem 0.5rem;
-    cursor: pointer;
-    font-weight: 100;
-    padding-bottom: 0.4rem;
+#recent>p {
+    opacity: 0.8;
+}
+.txtstyle{
+    font-size: 20px;
+    color:cornflowerblue;
+}
+/* group logo in recent division style*/
+.grp{
+    height: 20px;
+    width: 20px;
+    opacity: 0.7;
+    justify-items: auto;
+}
+/* posting division style*/
+#posting {
+    border: 1px solid rgb(251, 250, 250);
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px 5px 5px 5px;
 }
 
-.sidebar .view .views:hover{
-    background-color: rgb(223, 223, 223);
-}
-
-.sidebar .view .views h6{
-    color: gray;
-    font-weight: 100;
-}
-
-.sidebar .view .views a{
-    color: rgb(39, 39, 219);
-    text-decoration: none;
-    font-size: 0.8rem;
-}
-
-.sidebar .premium{
-    position: relative;
-    top: 7%;
-}
-
-
-.sidebar .premium h6{
-    color: gray;
-    font-weight: 100;
-    margin-left: 0.2rem;
-}
-
-.sidebar .premium a{
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    text-decoration: none;
-    margin-left: 1rem;
-    font-size: 0.8rem;
-    color: #000;
-}
-
-.sidebar .premium a i{
-    color: rgb(211, 211, 33);
-}
-
-hr#premium,
-hr#view,
-hr#profile{
-    margin: 0.5rem 0 0 0;
-}
-
-.items{
-    position: relative;
-    top: 7%;
-    display: flex;
-    gap: 0.5rem;
-    margin: 0.4rem 0 0 1rem;
-    color: gray;
-    cursor: pointer;
-}
-
-
-aside .recent_jobs{
-    background: #fff;
-    margin-top: 0.5rem;
-    width: 100%;
-    height: 68vh;
-    position: relative;
-    border-radius: 0.8rem;
-    overflow: hidden;
-}
-
-aside .recent_jobs .recent{
-    margin: 1rem;
-}
-
-aside .recent_jobs .recent h6{
-    font-weight: 100;
-}
-
-aside .recent_jobs .recent .one{
-    display: flex;
-    align-items: center;
-    margin-top: 0.7rem;
-    gap: 0.5rem;
-    color: rgb(83, 83, 83);
-}
-
-aside .recent_jobs .recent .one i{
-    font-size: 0.8rem;
-}
-
-aside .recent_jobs .groups{
-    margin: 2rem 0 0 1rem;
-}
-
-aside .recent_jobs .groups h5{
-    color: #0a66c2;
-    font-size: 0.7rem;
-}
-
-aside .recent_jobs .groups .two{
-    display: flex;
-    align-items: center;
-    margin-top: 0.7rem;
-    gap: 0.5rem;
-    color: rgb(83, 83, 83);
-}
-
-.groups .show{
-    display: flex;
-    margin-top: 1rem;
-    gap: 0.5rem;
-    color: gray;
-}
-
-aside .events{
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem 1rem 0 1rem;
-}
-
-aside .events h6:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-aside .events i{
-    color: gray;
-    cursor: pointer;
-}
-
-.discover{
-    text-align: center;
-    margin: 2rem 0 0 0;
-    border-top: 1px solid rgb(144, 144, 144);
-    padding-top: 1rem;
-}
-
-.discover a{
-    text-decoration: none;
-    color: gray;
-}
-
-    /*feed start*/
-      <div class="feed">
-        <div class="feed__inputContainer">
-          <div class="feed__input">
-            <i class="material-icons"> create </i>
-            <form>
-              <input type="text" />
-              <button type="submit">Send</button>
-            </form>
-          </div>
-
-          <div class="feed__inputOptions">
-            <div class="inputOption">
-              <i style="color: #70b5f9" class="material-icons"> insert_photo </i>
-              <h4>Photo</h4>
-            </div>
-            <div class="inputOption">
-              <i style="color: #e7a33e" class="material-icons"> subscriptions </i>
-              <h4>Video</h4>
-            </div>
-            <div class="inputOption">
-              <i style="color: #c0cbcd" class="material-icons"> event_note </i>
-              <h4>Event</h4>
-            </div>
-            <div class="inputOption">
-              <i style="color: #7fc15e" class="material-icons"> calendar_view_day </i>
-              <h4>Write Article</h4>
-            </div>
-          </div>
-        </div>
-        
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ================ main section starts here ================= */
-
-main{
-    background: #fff;
-    border-radius: 0.8rem;
-    height: 60vh;
-    position: relative;
-}
-
-main #close{
-    position: absolute;
-    right: 2rem;
-    top: 1rem;
-    color: gray;
-}
-
-main .event{
-    margin: 1.5rem 0 0 1rem;
-}
-
-main .event h3{
-    font-weight: 200;
-}
-
-main .box{
-    width: 95%;
-    overflow: hidden;
-    margin: 0.5rem auto;
-    border-radius: 0.5rem;
-}
-
-main .box img{
-    width: 100%;
-}
-
-main .box .content{
-    padding: 0.5rem 1rem;
-}
-
-main .box .content p{
-    font-weight: 100;
-}
-
-main .box .btn{
-    border: none;
-    background: #0a66c2;
-    padding: 0.6rem 1rem;
-    border-radius: 5rem;
-    margin: 0.5rem 1rem;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: 0.3s all ease;
-}
-
-main .box .btn:hover{
-    background: #0956a3;
-}
-
-main .media{
-    background: #fff;
-    height: 20vh;
-    margin-top: 1rem;
-    border-radius: 0.8rem;
-}
-
-main .media .search{
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-main .media .search img{
-    width: 3.2rem;
-    height: 3.2rem;
+.post-box {
+    height: 45px;
+    width: 45px;
+    background-color: gainsboro;
     border-radius: 50%;
-    cursor: pointer;
+    margin: 10px;
 }
 
-main .media .search input{
-    border-radius: 5rem;
-    border: 1px solid gray;
-    width: 100%;
-    padding: 0 1.2rem;
-    cursor: pointer;
-    transition: 0.3s all ease;
+.write-post {
+    float: right;
+    margin: 10px;
+    height: 40px;
+    width: 370px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(220, 215, 249);
 }
 
-main .media .search input:hover{
-    background: rgb(233, 233, 233);
+.post-img {
+    margin-left: 30px;
+    width: 40px;
+    height: 30px;
+    opacity: 0.7;
 }
 
-main .media .posts{
+#post-element {
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
-    margin: 0 2rem;
+    text-align: center;
 }
 
-main .media .posts .post{
-    display: flex;
-    gap: 1rem;
-    padding: 0.6rem 0.5rem;
-    cursor: pointer;
-    opacity: 0.5;
+#post-element p {
+    color: blue;
+    position: relative;
+    top: 5px;
+}
+/* myntra news feed  style*/
+#lkdn-news-feed-1 {
+    margin: 10px;
+    border: 1px solid rgb(253, 251, 251);
+    background-color: #fff;
 }
 
-main .media .posts .post h5{
-    font-weight: 400;
+.myntralogo {
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    float: left;
 }
 
-main .media .posts .post:nth-child(1) i{
-    color: #0a66c2;
-}
-main .media .posts .post:nth-child(2) i{
-    color: #19c20a;
-}
-main .media .posts .post:nth-child(3) i{
-    color: #3187dd;
-}
-main .media .posts .post:nth-child(4) i{
-    color: #c20ab9;
+.myntraname {
+    position: relative;
+    margin: 10px;
 }
 
-main .media .posts .post:hover{
-    background: rgb(235, 235, 235);
-    border-radius: 0.2rem;
-}
-
-
-/* ============ Right side starts here ============= */
-
-.right_side{
-    background: #fff;
-    border-radius: 0.8rem;
-    height: 62vh;
-}
-
-.right_side .news{
-    display: flex;
-    justify-content: space-between;
+.myntra-news-img {
+    margin: 0px 10px;
     align-items: center;
-    margin: 1rem;
+    height: 250px;
+    width: 440px;
+}
+.tools{
+    padding: 10px;
+}
+.tools span {
+    opacity: 0.8;
+    margin:30px 30px 30px 0px;
+
+}
+/* right panel linkedin news style*/
+#lkdn_news {
+    width: 270px;
+    height: 400px;
+    border: 1px solid rgb(254, 250, 250);
+    margin: 30px 0px 5px 30px;
+    padding-top: 10px;
+    background-color: #fff;
+    border-radius: 5px 5px 5px 5px ;
 }
 
-.right_side .news h4{
-    font-weight: 400;
+#lkdn_news ul {
+    padding: 30px;
 }
 
-.right_side .latest_news{
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: 0.2s all ease;
+#lkdn_news2 {
+    width: 270px;
+    height: 250px;
+    border: 1px solid rgb(248, 244, 244);
+    margin: 5px 30px;
+    padding-top: 10px;
+    background-color: #fff;
+    border-radius: 5px 5px 5px 5px;
 }
 
-.right_side .latest_news:hover{
-    background: rgb(231, 231, 231);
+#lkdn_news2 ul {
+    padding: 20px;
 }
 
-.right_side .latest_news .one{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+#sugest-pro {
+    width: 270px; 
+    height: 150px;
+    border: 1px solid white;
+    margin-left: 30px;
+    background-color: #fff;
 }
 
-.right_side .latest_news .one h5{
-    font-weight: 500;
+.unilever {
+    width: 270px;
+    height: 130px;
+    background-color: #fff;
 }
 
-.right_side .latest_news .one i{
-    font-size: 0.5rem;
-    color: gray;
+.unilever img {
+    margin-top: 5px;
+    float: left;
+    height: 50px;
+    width: 50px;
+
 }
 
-.right_side .latest_news .two{
-    margin: 0 1.9rem;
-    font-size: 0.8rem;
-    color: gray;
+.lever-name {
+    float: left;
+    margin: 10px 0px 0px 5px;
 }
-
-.right_side .show_more{
-    display: flex;
-    gap: 0.5rem;
-    color: gray;
-    align-items: center;
-    margin: 1rem;
-    cursor: pointer;
-}
-
-.right_side .show_more h5{
-    font-weight: 400;
+/* followe button style*/
+.followe {
+    color:skyblue;
+    display: grid;
+    justify-content: center;
+    height: 30px;
+    border: 2px solid black;
+    position: relative;
+    top: 60px;
+    right: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 20px 20px 20px 20px;
 }
